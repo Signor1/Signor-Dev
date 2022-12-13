@@ -1,0 +1,25 @@
+{
+  "short_name": "Signor Dev",
+  "name": "Signor Dev Portfolio",
+  "icons": [
+    {
+      "src": "SDev.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "SDev.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "SDev.svg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

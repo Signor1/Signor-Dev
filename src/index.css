@@ -1,0 +1,146 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+#hero {
+    background-image: url('./assets/img/20221120_103150.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: profile-animate 8s ease-in-out infinite -1s;
+    box-shadow: inset 0 0 0 4px rgba(216 181 58 / 50%), 0 0 0 4px rgb(117 253 146 /50%);
+}
+
+@keyframes profile-animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+#myname {
+    background: -webkit-linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background: linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    background-position: right;
+    animation: move 8s infinite linear alternate;
+    position: relative;
+}
+
+@keyframes move {
+    100% {
+        background-position: left;
+    }
+}
+
+#dev {
+    background: -webkit-linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background: linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dproduct {
+    background: -webkit-linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background: linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    background-position: right;
+    animation: productmove 5s infinite linear alternate;
+}
+
+@keyframes productmove {
+    100% {
+        background-position: left;
+    }
+}
+
+#ideas {
+    text-shadow: -2px 0 0px #1acbe9, -4px 2px 1px #75fd92, -6px 4px 2px #d8b53a;
+}
+
+#myname::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 1px;
+    background: -webkit-linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    background: linear-gradient(to right, #d8b53a, #75fd92, #1acbe9);
+    animation: underline-text 10s infinite linear alternate;
+}
+
+@keyframes underline-text {
+    100% {
+        width: 100%;
+    }
+}
+
+#portfolio {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1027%26quot%3b)' fill='none'%3e%3cpath d='M782.05 343.36L808.91 343.36L808.91 379.22L782.05 379.22z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M259.64 415.45L301.96 415.45L301.96 450L259.64 450z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M458.19 439.36L501.87 439.36L501.87 484.36L458.19 484.36z' fill='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M796.08 9.9L828.19 9.9L828.19 42.01L796.08 42.01z' stroke='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M1081.13 404.46 a35.42 35.42 0 1 0 70.84 0 a35.42 35.42 0 1 0 -70.84 0z' stroke='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M998.81 0.26 a42.31 42.31 0 1 0 84.62 0 a42.31 42.31 0 1 0 -84.62 0z' fill='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M1146.23 51.64 a26.81 26.81 0 1 0 53.62 0 a26.81 26.81 0 1 0 -53.62 0z' fill='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M484.88 196.3L492.38 196.3L492.38 230.59L484.88 230.59z' fill='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M497.47 11.17 a9.73 9.73 0 1 0 19.46 0 a9.73 9.73 0 1 0 -19.46 0z' stroke='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M1130.34 257.83 a42.55 42.55 0 1 0 85.1 0 a42.55 42.55 0 1 0 -85.1 0z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M1089.07 366.41 a50.53 50.53 0 1 0 101.06 0 a50.53 50.53 0 1 0 -101.06 0z' stroke='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M742.01 95.13 a10.55 10.55 0 1 0 21.1 0 a10.55 10.55 0 1 0 -21.1 0z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M223.2 506.66L240.8 506.66L240.8 524.26L223.2 524.26z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M996.68 73.62 a44.05 44.05 0 1 0 88.1 0 a44.05 44.05 0 1 0 -88.1 0z' stroke='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M926.11 473.81 a17.87 17.87 0 1 0 35.74 0 a17.87 17.87 0 1 0 -35.74 0z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M815.16 283.87 a1.01 1.01 0 1 0 2.02 0 a1.01 1.01 0 1 0 -2.02 0z' fill='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M242.39 237.36L245.79 237.36L245.79 292.21L242.39 292.21z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M460.83 375.91a41.89 41.89 0 1 0-75.82 35.65z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M831.93 182.4 a10.08 10.08 0 1 0 20.16 0 a10.08 10.08 0 1 0 -20.16 0z' stroke='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M530.03 105.98 a43.48 43.48 0 1 0 86.96 0 a43.48 43.48 0 1 0 -86.96 0z' stroke='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M1007.05 101.93 a53.43 53.43 0 1 0 106.86 0 a53.43 53.43 0 1 0 -106.86 0z' stroke='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M1279.86 275.22 a20.65 20.65 0 1 0 41.3 0 a20.65 20.65 0 1 0 -41.3 0z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M553.19 495.32 a47.85 47.85 0 1 0 95.7 0 a47.85 47.85 0 1 0 -95.7 0z' stroke='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M1236.06 295.63a15.51 15.51 0 1 0-21.89-21.99z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M295.7 266.39L297.32 266.39L297.32 277.32L295.7 277.32z' fill='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M30.08 539.33L74.65 539.33L74.65 562.16L30.08 562.16z' fill='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M759.84 434.37a20.3 20.3 0 1 0-40.52-2.66z' stroke='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M1218.36 156.2L1230 156.2L1230 167.84L1218.36 167.84z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M374.42 450.74L390.65 450.74L390.65 454.39L374.42 454.39z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3cpath d='M1109.79 30.82a44.78 44.78 0 1 0 22.49 86.69z' fill='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M1244.57 333.42a23.1 23.1 0 1 0 42.99 16.92z' fill='rgba(117%2c 253%2c 146%2c 0.05)'%3e%3c/path%3e%3cpath d='M116.8 138.63a10.17 10.17 0 1 0 9.09-18.19z' fill='rgba(26%2c 203%2c 233%2c 0.05)'%3e%3c/path%3e%3cpath d='M989.94 78.34L1042.07 78.34L1042.07 130.47L989.94 130.47z' stroke='rgba(216%2c 181%2c 58%2c 0.05)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1027'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+/* Images of projects  */
+/* FILagos  */
+#fILagos {
+    background-image: url("./assets/img/Founders.png");
+    background-size: cover;
+}
+
+/* Newstown  */
+#newstown {
+    background-image: url("./assets/img/NewsTown.png");
+    background-size: cover;
+}
+
+/* QBlog  */
+#qblog {
+    background-image: url("./assets/img/Q.\ Studio.png");
+    background-size: cover;
+}
+
+/* SkyBliss  */
+#skybliss {
+    background-image: url("./assets/img/SKYBLISS.png");
+    background-size: cover;
+}
+
+/* GeoVisual  */
+#geovisual {
+    background-image: url("./assets/img/GEO-Visuals.png");
+    background-size: cover;
+}
+
+/* BrunoAnderson  */
+#brunoanderson {
+    background-image: url("./assets/img/BrunoAnderson.png");
+    background-size: cover;
+}
